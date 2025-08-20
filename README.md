@@ -24,7 +24,7 @@ Fonctionnalités principales :
 
 ## Lien vers le projet
 
-[À insérer ici une fois le site en ligne]
+http://www.johara-boudjenane-psychologue.fr/
 
 ---
 
