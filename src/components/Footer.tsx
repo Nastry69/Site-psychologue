@@ -15,8 +15,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-background/80">
-              <p>📧 contact@johara-boudjenane-psychologue.fr</p>
-              <p>📞 07 78 51 91 72</p>
+              <a href="mailto:contact@johara-boudjenane-psychologue.fr"><p className="hover:underline">📧 contact@johara-boudjenane-psychologue.fr</p></a>
+              <a href="tel:+33778519172"><p className="hover:underline py-2">📞 07 78 51 91 72</p></a>
               <p>📍 91 Avenue Francis de Pressensé, 69200 Vénissieux</p>
               <p>📍 Téléconsultation où que tu sois</p>
             </div>

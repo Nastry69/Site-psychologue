@@ -45,7 +45,7 @@ const ContactSection = () => {
                   <Mail className="w-5 h-5 text-primary mt-1" />
                   <div>
                     <h4 className="font-medium text-foreground">Email</h4>
-                    <p className="text-muted-foreground">contact@johara-boudjenane-psychologue.fr</p>
+                    <a href="mailto:contact@johara-boudjenane-psychologue.fr" className="text-muted-foreground hover:underline">contact@johara-boudjenane-psychologue.fr</a>
                   </div>
                 </div>
                 
@@ -53,7 +53,7 @@ const ContactSection = () => {
                   <Phone className="w-5 h-5 text-primary mt-1" />
                   <div>
                     <h4 className="font-medium text-foreground">Téléphone</h4>
-                    <p className="text-muted-foreground">07 78 51 91 72</p>
+                    <a href="tel:+33778519172"><p className="text-muted-foreground hover:underline">07 78 51 91 72</p></a>
                   </div>
                 </div>
                 

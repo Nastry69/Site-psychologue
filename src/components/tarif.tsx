@@ -29,7 +29,7 @@ const TarifSection = () => {
   }; 
 
   return (
-    <section id="pricing" className="py-11 bg-background">
+    <section id="pricing" className="py-11 bg-background pt-[75px] md:pt-16">
       <div className="container mx-auto px-4 pt-16">
         <div className="text-center mb-2 mt-2">
           <h2 className="text-4xl font-bold text-foreground mb-4">Tarifs</h2>
