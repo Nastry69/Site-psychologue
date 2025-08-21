@@ -77,7 +77,7 @@ const ContactSection = () => {
               <div className="space-y-2 text-sage-foreground/80">
                 <div className="flex justify-between">
                   <span>Lundi - Jeudi</span>
-                  <span>8h00 - 21h00</span>
+                  <span>10h00 - 20h00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Vendredi</span>

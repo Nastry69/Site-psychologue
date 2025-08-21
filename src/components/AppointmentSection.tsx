@@ -33,7 +33,7 @@ const AppointmentSection = () => {
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <Clock className="w-4 h-4" />
-                  <span>8h00 - 21h00</span>
+                  <span>10h00 - 20h00</span>
                 </div>
               </div>
             </CardContent>
@@ -55,7 +55,7 @@ const AppointmentSection = () => {
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <Clock className="w-4 h-4" />
-                  <span>8h00 - 21h00</span>
+                  <span>10h00 - 20h00</span>
                 </div>
               </div>
             </CardContent>
