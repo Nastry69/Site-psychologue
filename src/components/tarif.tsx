@@ -11,7 +11,7 @@ const tarifs = [
   { title: "Test QI Adulte", duration: "60 minutes", price: "310€", features: ["Passation en cabinet", "Bilan approfondi", "Compte rendu détaillé"], popular: false },
   { title: "Test QI enfant", duration: "60 minutes", price: "310€", features: ["Passation en cabinet", "Bilan approfondi", "Compte rendu détaillé"], popular: false },
   { title: "Sexologie", duration: "60 minutes", price: "100€", features: ["Consultation en visio","Plan thérapeutique", "Questions et objectifs"], popular: false },
-  { title: "Addictologie", duration: "60 minutes", price: "100€", features: ["Consultation en visio","Plan thérapeutique", "Questions et objectifs"], popular: false },
+  {/* title: "Addictologie", duration: "60 minutes", price: "100€", features: ["Consultation en visio","Plan thérapeutique", "Questions et objectifs"], popular: false */},
 ];
 
 const TarifSection = () => {
