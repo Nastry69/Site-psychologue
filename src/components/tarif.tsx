@@ -5,13 +5,11 @@ import { Clock, CheckCircle } from "lucide-react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const tarifs = [
-  { title: "Thérapie en téléconsultation", duration: "50 minutes", price: "90€", features: ["Consultation en ligne", "Flexibilité", "Suivi personnalisé"], popular: true },
-  { title: ["Consultation de thérapie", "individuelle"], duration: "50 minutes", price: "90€", features: ["Séance en cabinet", "Suivi personnalisé"], popular: false },
-  { title: "Thérapie de couple", duration: "60 minutes", price: "130€", features: ["Bilan approfondi", "Plan thérapeutique", "Questions et objectifs"], popular: false },
-  { title: "Thérapie Familiale", duration: "60 minutes", price: "130€", features: ["Bilan approfondi", "Plan thérapeutique", "Questions et objectifs"], popular: false },
-  { title: "Test QI Adulte", duration: "60 minutes", price: "310€", features: ["Bilan approfondi", "Compte rendu détaillé"], popular: false },
-  { title: "Test QI enfant", duration: "60 minutes", price: "310€", features: ["Bilan approfondi", "Compte rendu détaillé"], popular: false },
-  { title: "Sexologie", duration: "60 minutes", price: "90€", features: ["Plan thérapeutique", "Questions et objectifs"], popular: false },
+  { title: ["Consultation de thérapie", "individuelle"], duration: "50 minutes", price: "90€", features: ["Consultation en ligne", "Flexibilité", "Suivi personnalisé"], popular: true },
+  { title: "Thérapie de couple", duration: "60 minutes", price: "130€", features: ["Consultation en ligne ou en cabinet", "Plan thérapeutique", "Questions et objectifs"], popular: false },
+  { title: "Test QI Adulte", duration: "60 minutes", price: "310€", features: ["Passation en cabinet", "Bilan approfondi", "Compte rendu détaillé"], popular: false },
+  { title: "Test QI enfant", duration: "60 minutes", price: "310€", features: ["Passation en cabinet", "Bilan approfondi", "Compte rendu détaillé"], popular: false },
+  { title: "Sexologie", duration: "60 minutes", price: "90€", features: ["Consultation en visio","Plan thérapeutique", "Questions et objectifs"], popular: false },
 ];
 
 const TarifSection = () => {
@@ -108,7 +106,7 @@ const TarifSection = () => {
               Modalités de paiement
             </h3>
             <p className="text-sage-foreground/80">
-              Paiement par CB ou espèces. <br/>
+              Paiement par CB, espèces ou virements. <br/>
               Certaines mutuelles proposent un remboursement partiel des consultations de psychologie.
             </p>
           </div>

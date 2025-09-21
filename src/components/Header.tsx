@@ -51,7 +51,7 @@ const Header = () => {
         <div>
           <a href="/" className="text-3xl font-bold text-foreground">Johara BOUDJENANE </a>
           <br />
-          <a href="/" className="text-2xl font-normal text-foreground">Psychologue et Sexologue</a>
+        {/*  <a href="/" className="text-2xl font-normal text-foreground">Psychologue et Sexologue</a>*/}
         </div>
 
         {/* Menu Desktop */}

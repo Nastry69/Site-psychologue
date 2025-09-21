@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Shield, Users } from "lucide-react";
+import { Heart, Shield, Users, GraduationCap, Microscope, BookOpen, Clipboard, Award, FileText, Star } from "lucide-react";
+
 
 const AboutSection = () => {
   return (
@@ -7,19 +8,27 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-6">Mon approche</h3>
+            {/* ✅ Image en forme de bulle */}
+            <img
+              src="../assets/image.jpg"   // 🔹 Mets ici le chemin de ta photo
+              alt="Photo de profil"
+              className="w-32 h-32 rounded-full mx-auto mb-6 object-cover shadow-lg"
+            />
+            <h3 className="text-2xl font-semibold text-foreground mb-6"></h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Vous traversez une période difficile, vivez une situation douloureuse ou souhaitez mieux comprendre vos émotions ?
-              Psychologue clinicienne et psychothérapeute diplômée d’État, je vous accompagne  pour retrouver équilibre et sérénité.
+              Psychologue diplômée, je propose des consultations en visio pour les adultes et les couples.
+              Les consultations en présentiel sont actuellement réservées aux bilans de QI et aux évaluations nécessitant la présence au cabinet.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Je reçois enfants, adolescents et adultes en présentiel et en téléconsultation dans un cadre confidentiel et respectueux.
-              Spécialisée en psychologie clinique, psycho-traumatologie, et sexologie, j’adapte ma méthode à vos besoins pour vous 
-              offrir un espace sûr où explorer vos émotions, vos blocages et vos ressources.
+             J’accompagne principalement :<br />
+              Les adultes souffrant d’anxiété, de stress ou de manque de confiance en eux.<br />
+              Les couples souhaitant améliorer leur communication et leurs relations.<br />
+              Les personnes en quête de sérénité et d’équilibre intérieur.<br />
+              
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Prendre rendez-vous est un premier pas vers un mieux-être durable. Ensemble, nous créerons un espace unique d’écoute 
-              et d’introspection, pour avancer en confiance vers vos objectifs.
+              Je propose également un accompagnement sur la sexualité, les traumatismes et les dynamiques familiales.
+              Mon approche se veut bienveillante, claire et concrète, avec des outils adaptés à chaque personne.
             </p>
           </div>
           
@@ -63,72 +72,128 @@ const AboutSection = () => {
         </div>
 
         <div className="bg-card rounded-2xl p-8 shadow-card">
-              <h3 className="text-2xl font-semibold text-foreground mb-6">Mes formations</h3>
+          <h3 className="flex items-center gap-3 text-2xl font-semibold text-foreground mb-6">
+            <GraduationCap className="w-5 h-5 text-primary" />
+            Mes Diplômes
+          </h3>
+
+          <div className="space-y-6 text-muted-foreground">
+
+            <div className="flex items-baseline gap-4">
+              <h4 className="font-semibold text-foreground">2022</h4>
+              <p>Master en psychologie clinique, psychopathologie et psychologie de la santé - Université de Besançon</p>
+            </div>
+
+            <div className="flex items-baseline gap-4">
+              <h4 className="font-semibold text-foreground">2020</h4>
+              <p>Licence de psychologie - Université Rennes 2 - UFR Sciences humaines</p>
+            </div>
+
+            <h3 className="flex items-center gap-3 text-2xl font-semibold text-foreground mb-6">
+              <BookOpen className="w-5 h-5 text-primary" />
+              Mes formations
+            </h3>
+
+            <div className="space-y-6 text-muted-foreground">
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2025</h4>
+                <p>EMDR - IFEMDR - (En Cours)</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2024</h4>
+                <p>Bilan psychométrique/intellectuel pour adultes et enfants (QI) - Pearson FRANCE</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2024</h4>
+                <p>Trouble anxieux compulsif - Formationpsy</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2024</h4>
+                <p>Stress post-traumatique - Formationspsy</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2024</h4>
+                <p>Sexologie - AFPRO</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2024</h4>
+                <p>Le patte noire - Formationspsy</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2024</h4>
+                <p>Inceste et abus sexuel - Formationpsy</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2023</h4>
+                <p>Les troubles anxieux - Formationspsy</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2023</h4>
+                <p>Les thérapies familiales et de couple approches systémiques et psychanalytiques - formationpsy</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2023</h4>
+                <p>L'estime de soi - formationpsy</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2022</h4>
+                <p>Accompagner en pluridicilinarité l'obésité de l'enfant et de l'adolescent - REPPOP Lyrra</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2021</h4>
+                <p>Traumatisme et interventions précoces - Formationspsy</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2021</h4>
+                <p>Langage non verbal - Détecter le mensonge</p>
+              </div>
+
+
+              <h3 className="flex items-center gap-3 text-2xl font-semibold text-foreground mb-6">
+                <Microscope className="w-5 h-5 text-primary" />
+                Mes Expériences</h3>
+
+
 
               <div className="space-y-6 text-muted-foreground">
 
                 <div className="flex items-baseline gap-4">
-                  <h4 className="font-semibold text-foreground">2025</h4>
-                  <p>Test d'intelligence ( QI) pour adultes : le WAIS IV - Université de Rennes 2</p>
+                  <h4 className="font-semibold text-foreground">Depuis 2023</h4>
+                  <p>Cabinet libérale - Vénissieux </p>
                 </div>
 
                 <div className="flex items-baseline gap-4">
-                  <h4 className="font-semibold text-foreground">2024</h4>
-                  <p>Trouble anxieux compulsif - Formationpsy</p>
+                  <h4 className="font-semibold text-foreground">2022 - 2023</h4>
+                  <p>Cabinet libérale - Lyon</p>
                 </div>
 
                 <div className="flex items-baseline gap-4">
-                  <h4 className="font-semibold text-foreground">2024</h4>
-                  <p>Stress post-traumatique - Formationspsy</p>
+                  <h4 className="font-semibold text-foreground">2021 - 2022</h4>
+                  <p>Praticienne - Fédération des Aveugles Alsace Lorraine Grand Est - Strasbourg - ESAT atelier du petit prince</p>
                 </div>
 
                 <div className="flex items-baseline gap-4">
-                  <h4 className="font-semibold text-foreground">2024</h4>
-                  <p>Sexologie - AFPRO</p>
-                </div>
-
-                <div className="flex items-baseline gap-4">
-                  <h4 className="font-semibold text-foreground">2024</h4>
-                  <p>Le patte noire - Formationspsy</p>
-                </div>
-
-                <div className="flex items-baseline gap-4">
-                  <h4 className="font-semibold text-foreground">2024</h4>
-                  <p>Inceste et abus sexuel - Formationpsy</p>
-                </div>
-
-                <div className="flex items-baseline gap-4">
-                  <h4 className="font-semibold text-foreground">2023</h4>
-                  <p>Les troubles anxieux - Formationspsy</p>
-                </div>
-
-                <div className="flex items-baseline gap-4">
-                  <h4 className="font-semibold text-foreground">2023</h4>
-                  <p>Les thérapies familiales et de couple approches systémiques et psychanalytiques - formationpsy</p>
-                </div>
-
-                <div className="flex items-baseline gap-4">
-                  <h4 className="font-semibold text-foreground">2023</h4>
-                  <p>L'estime de soi - formationpsy</p>
-                </div>
-
-                <div className="flex items-baseline gap-4">
-                  <h4 className="font-semibold text-foreground">2022</h4>
-                  <p>Accompagner en pluridicilinarité l'obésité de l'enfant et de l'adolescent - REPPOP Lyrra</p>
-                </div>
-
-                <div className="flex items-baseline gap-4">
-                  <h4 className="font-semibold text-foreground">2021</h4>
-                  <p>Traumatisme et interventions précoces - Formationspsy</p>
-                </div>
-
-                <div className="flex items-baseline gap-4">
-                  <h4 className="font-semibold text-foreground">2021</h4>
-                  <p>Langage non verbal - Détecter le mensonge</p>
+                  <h4 className="font-semibold text-foreground">2020 - 2021</h4>
+                  <p>Praticienne - Métropole de Lyon - Lyon - l'adapt</p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
     </section>
   );
 };

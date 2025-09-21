@@ -29,7 +29,7 @@ const AppointmentSection = () => {
               <div className="space-y-2 text-sm text-muted-foreground">
                 <div className="flex items-center justify-center space-x-2">
                   <Calendar className="w-4 h-4" />
-                  <span>Lundi au jeudi</span>
+                  <span>Lundi au mercredi</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <Clock className="w-4 h-4" />
@@ -51,7 +51,7 @@ const AppointmentSection = () => {
               <div className="space-y-2 text-sm text-muted-foreground">
                 <div className="flex items-center justify-center space-x-2">
                   <Calendar className="w-4 h-4" />
-                  <span>4 jours sur 7</span>
+                  <span>3 jours sur 7</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <Clock className="w-4 h-4" />

@@ -11,7 +11,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-[75px]">
       <div className="absolute inset-0 z-0">
         <img 
-          src="/assets/image.png" 
+          src="/assets/Cab.jpeg" 
           alt="Cabinet de psychologie accueillant" 
           className="w-full h-full object-cover"
         />
@@ -21,8 +21,9 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-20 pt-[150px] relative z-10">
         <div className="max-w-2xl">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Consultation au cabinet et <span className="inline text-primary">téléconsultation</span>
+            Psychologue en <span className="inline text-primary">visio</span>
           </h1>
+          <h2 className="text-2xl font-bold">Anxiété, estime de soi et relations </h2><br />
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
