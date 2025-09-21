@@ -6,7 +6,8 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const tarifs = [
   { title: ["Consultation de thérapie", "individuelle"], duration: "50 minutes", price: "90€", features: ["Consultation en ligne", "Flexibilité", "Suivi personnalisé"], popular: true },
-  { title: "Thérapie de couple", duration: "60 minutes", price: "130€", features: ["Consultation en ligne ou en cabinet", "Plan thérapeutique", "Questions et objectifs"], popular: false },
+  { title: "Thérapie de couple", duration: "60 minutes", price: "130€", features: ["Consultation en ligne", "Plan thérapeutique", "Questions et objectifs"], popular: false },
+  { title: "Thérapie de couple", duration: "60 minutes", price: "150€", features: ["Consultation en cabinet", "Plan thérapeutique", "Questions et objectifs"], popular: false },
   { title: "Test QI Adulte", duration: "60 minutes", price: "310€", features: ["Passation en cabinet", "Bilan approfondi", "Compte rendu détaillé"], popular: false },
   { title: "Test QI enfant", duration: "60 minutes", price: "310€", features: ["Passation en cabinet", "Bilan approfondi", "Compte rendu détaillé"], popular: false },
   { title: "Sexologie", duration: "60 minutes", price: "100€", features: ["Consultation en visio","Plan thérapeutique", "Questions et objectifs"], popular: false },
