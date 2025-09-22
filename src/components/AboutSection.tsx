@@ -133,6 +133,11 @@ const AboutSection = () => {
 
               <div className="flex items-baseline gap-4">
                 <h4 className="font-semibold text-foreground">2023</h4>
+                <p>Formation Addictologie - Lyon 1</p>
+              </div>
+
+              <div className="flex items-baseline gap-4">
+                <h4 className="font-semibold text-foreground">2023</h4>
                 <p>Les troubles anxieux - Formationspsy</p>
               </div>
 
