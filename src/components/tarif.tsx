@@ -5,12 +5,15 @@ import { Clock, CheckCircle } from "lucide-react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const tarifs = [
-  { title: ["Consultation de thérapie", "individuelle"], duration: "50 minutes", price: "90€", features: ["Consultation en ligne", "Flexibilité", "Suivi personnalisé"], popular: true },
-  { title: "Thérapie de couple", duration: "60 minutes", price: "130€", features: ["Consultation en ligne", "Plan thérapeutique", "Questions et objectifs"], popular: false },
-  { title: "Thérapie de couple", duration: "60 minutes", price: "150€", features: ["Consultation en cabinet", "Plan thérapeutique", "Questions et objectifs"], popular: false },
-  { title: "Test QI Adulte", duration: "60 minutes", price: "310€", features: ["Passation en cabinet", "Bilan approfondi", "Compte rendu détaillé"], popular: false },
-  { title: "Test QI enfant", duration: "60 minutes", price: "310€", features: ["Passation en cabinet", "Bilan approfondi", "Compte rendu détaillé"], popular: false },
-  { title: "Sexologie", duration: "60 minutes", price: "100€", features: ["Consultation en visio","Plan thérapeutique", "Questions et objectifs"], popular: false },
+  { title: ["Consultation de thérapie", "individuelle"], duration: "55 minutes", price: "90€", features: ["Consultation en ligne", "Flexibilité", "Suivi personnalisé"], popular: true },
+  { title: "Thérapie de couple", duration: "55 minutes", price: "130€", features: ["Consultation en ligne", "Plan thérapeutique", "Questions et objectifs"], popular: false },
+  { title: "Thérapie de couple", duration: "55 minutes", price: "150€", features: ["Consultation en cabinet", "Plan thérapeutique", "Questions et objectifs"], popular: false },
+  { title: "Test QI Adulte", duration: "55 minutes", price: "310€", features: ["Passation en cabinet", "Bilan approfondi", "Compte rendu détaillé"], popular: false },
+  { title: "Test QI enfant", duration: "55 minutes", price: "310€", features: ["Passation en cabinet", "Bilan approfondi", "Compte rendu détaillé"], popular: false },
+  { title: "Sexologie", duration: "55 minutes", price: "90€", features: ["Consultation en visio","Plan thérapeutique", "Questions et objectifs"], popular: false },
+  { title: "Addictologie", duration: "55 minutes", price: "90€", features: ["Consultation en visio possible","Plan thérapeutique", "Questions et objectifs"], popular: false },
+  { title: "Première consultation d'EMDR", duration: "55 minutes", price: "90€", features: ["Consultation en présentiel","Plan de ciblage des objectifs", "Sous réserve d'évalutation"], popular: false },
+  { title: "Suivi consultation d'EMDR", duration: "90 minutes", price: "90€", features: ["Consultation en présentiel","Plan de ciblage des objectifs", "Sous réserve d'évalutation"], popular: false },
 ];
 
 const TarifSection = () => {
@@ -104,10 +107,10 @@ const TarifSection = () => {
       <div className="mt-4 mb-6 text-center">
           <div className="bg-sage rounded-xl p-6 max-w-2xl mx-auto">
             <h3 className="text-lg font-semibold text-sage-foreground mb-3">
-              Modalités de paiement
+              <strong>Modalités de paiement</strong>
             </h3>
             <p className="text-sage-foreground/80">
-              Paiement par CB, espèces ou virements. <br/>
+              <strong>Paiement par CB, espèces<br/></strong>
               Certaines mutuelles proposent un remboursement partiel des consultations de psychologie.
             </p>
           </div>

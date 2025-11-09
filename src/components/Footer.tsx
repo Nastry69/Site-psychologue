@@ -34,11 +34,11 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-background/20 mt-6 pt-6 text-center text-background/60">
-          <p className="mb-3 text-m">
-            Conformément à la loi, les consultations de psychologie ne sont pas remboursées par la Sécurité Sociale, 
+          <p className="mb-3 text-m font-bold">
+            Les consultations de psychologie ne sont pas remboursées par la Sécurité Sociale, 
             mais peuvent être prises en charge par certaines mutuelles.
           </p>
-          <p>&copy; 2024 Johara BOUDJENANE Psychologue - Psychologue. Tous droits réservés - Site créer par Tristan DZIOCH.</p>
+          <p>&copy; 2025 Johara BOUDJENANE Psychologue - Tous droits réservés - Site crée par Tristan DZIOCH.</p>
         </div>
       </div>
     </footer>

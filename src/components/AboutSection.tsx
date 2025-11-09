@@ -16,19 +16,26 @@ const AboutSection = () => {
             />
             <h3 className="text-2xl font-semibold text-foreground mb-6"></h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Psychologue diplômée, je propose des consultations en visio pour les adultes et les couples.
-              Les consultations en présentiel sont actuellement réservées aux bilans de QI et aux évaluations nécessitant la présence au cabinet.
+              Vous souhaitez avancer sur vos problématiques personnelles ou émotionnelles ?<br /> Je suis là pour vous accompagner.
+
+              Je suis psychologue, spécialisée dans l’accompagnement des adultes et jeunes adultes, ainsi que dans la thérapie de couple et familiale.<br /><br />
+              Je propose un suivi adapté à chaque personne, en tenant compte de plusieurs dimensions : émotions, relations et comportements. Chaque séance est conçue pour répondre à vos besoins uniques et vous aider à progresser à votre rythme.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-             J’accompagne principalement :<br />
-              Les adultes souffrant d’anxiété, de stress ou de manque de confiance en eux.<br />
-              Les couples souhaitant améliorer leur communication et leurs relations.<br />
-              Les personnes en quête de sérénité et d’équilibre intérieur.<br />
+             <strong>J’accompagne principalement :<br /></strong>
+            <strong>- Les personnes confrontées à la dépression, l’anxiété, au stress ou à l’épuisement<br /></strong>
+            <strong>- Celles souhaitant renforcer leur confiance en soi ou leur estime de soi<br /></strong>
+            <strong>- Les personnes traversant des blessures du passé ou des traumatismes<br /></strong>
+            <strong>- Toutes personnes confrontée à des difficultés relationnelles ou affectives, que ce soit dans la vie de couple, familiale ou en tant qu’individu (ruptures, conflits, problèmes de communication…)<br /></strong>
+            <strong>- Toutes personnes qui souhaitent identifier ses schémas et ne plus les reproduire<br /></strong>
+            <strong>- Toute personne confrontée à des difficultés liées à la sexualité ou aux addictions<br /></strong>
+            <strong>- Les personnes qui souhaitent connaître leur fonctionnement<br /></strong>
+            <strong>- Celles et ceux qui souhaitent réaliser un bilan cognitif ou un test de QI, pour enfants, adolescents ou adultes, afin de mieux comprendre leur fonctionnement<br /></strong>
               
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Je propose également un accompagnement sur la sexualité, les traumatismes et les dynamiques familiales.
-              Mon approche se veut bienveillante, claire et concrète, avec des outils adaptés à chaque personne.
+              Les consultations peuvent se dérouler au cabinet ou en visioconférence, dans un cadre bienveillant, sécurisé et confidentiel.
+              Le premier échange permet de poser un regard sur ce qui freine et de clarifier ses enjeux, individuellement, en couple ou en famille.
             </p>
           </div>
           
@@ -98,7 +105,7 @@ const AboutSection = () => {
 
               <div className="flex items-baseline gap-4">
                 <h4 className="font-semibold text-foreground">2025</h4>
-                <p>EMDR - IFEMDR - (En Cours)</p>
+                <p>EMDR - IFEMDR</p>
               </div>
 
               <div className="flex items-baseline gap-4">
