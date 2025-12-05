@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./components/pages/Index";
 import Pricing from "./components/pages/Pricing";
 import ThankYou from "./components/pages/ThanksYou";
+import Shop from "./components/pages/Shop";
 import NotFound from "./components/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -18,6 +19,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/tarifs" element={<Pricing />} />
           <Route path="/merci" element={<ThankYou/>}/>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
