@@ -24,7 +24,7 @@ export default function MonLivre() {
       {/* Hero / Introduction */}
       <div className="text-center mb-16">
         <h1 className="text-5xl md:text-6xl font-bold mb-6">
-          {product.title}
+          Ton e-Book est disponible !
         </h1>
       </div>
 
