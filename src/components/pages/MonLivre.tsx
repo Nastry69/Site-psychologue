@@ -1,20 +1,19 @@
-// pages/shop.tsx
 import BarInfo from "@/components/BarInfo";
 import Header from "@/components/Header";
-import ShopSection from "@/components/Shop";
+import MonLivreSection from "@/components/MonLivre";
 import Footer from "@/components/Footer";
 
-const Shop = () => {
+const MonLivre = () => {
   return (
     <div className="min-h-screen">
       <BarInfo />
       <Header />
       <main className="pt-20">
-        <ShopSection />
+        <MonLivreSection />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default Shop;
+export default MonLivre;

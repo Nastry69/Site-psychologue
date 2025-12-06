@@ -107,7 +107,7 @@ const ContactSection = () => {
               className="space-y-6">
                 
                 <input type="hidden" name="access_key" aria-hidden="true" value="c43b3003-d51a-4717-891a-74daeefe8ec3" />
-                <input type="hidden" name="redirect" value="http://localhost:8080/merci"/>
+                <input type="hidden" name="redirect" value="https://johara-boudjenane-psychologue.fr/merci"/>
                 <input type="checkbox" name="botcheck" aria-hidden="true" className="hidden" style={{ display: "none" }} />
                 
                 <div className="grid md:grid-cols-2 gap-4">
