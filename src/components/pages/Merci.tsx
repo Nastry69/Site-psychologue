@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const ThankYou = () => {
+const Merci = () => {
   const navigate = useNavigate();
 
   return (
@@ -47,4 +47,4 @@ const ThankYou = () => {
   );
 };
 
-export default ThankYou;
+export default Merci;
