@@ -15,7 +15,7 @@ export default function MonLivre() {
     "Ce parcours t’aide à redevenir acteur de ton bien-être."
   ],
     price: "19.99€",
-    image: "/assets/Couverture.png",
+    image: "/assets/Tablette.png",
     paymentLink: "https://buy.stripe.com/dRmfZg3Lqfjq4019peaIM00",
   };
 
