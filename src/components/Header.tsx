@@ -45,7 +45,7 @@ const Header = () => {
 };
 
  const handleShopClick = () => {
-  navigate('/MonLivre');  
+  navigate('/Livre');  
   setOpen(false);    
 
   setTimeout(() => {

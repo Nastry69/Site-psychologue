@@ -11,7 +11,7 @@ const Footer = () => {
               SIRET : 830 749 487 000 13
             </p>
             <p className=" mt-2 text-s text-background/60">
-              <strong>Autrice</strong> - <a href="Monlivre">Voir ouvrage</a>
+              <strong>Autrice</strong> - <a href="Livre">Voir ouvrage</a>
             </p>
           </div>
           
