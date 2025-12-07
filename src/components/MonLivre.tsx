@@ -8,7 +8,7 @@ export default function MonLivre() {
     id: 1,
     title: "5 séances d'auto-thérapie pour se libérer de l'anxiété",
      description: [
-    "Ce livre est une auto-thérapie guidée, construite pour t’accompagner pas à pas dans l’exploration et la transformation de ton anxiété.",
+    "Ce livre numérique est une auto-thérapie guidée, construite pour t’accompagner pas à pas dans l’exploration et la transformation de ton anxiété.",
     "En tant que psychologue, j’ai conçu un parcours en 5 consultations, progressives, qui t’aident à travailler ton anxiété.",
     "Que tu sois adolescent, adulte ou plus avancé dans la vie, ce livre t’offre un chemin accessible, bienveillant et concret, pour reprendre confiance en toi et réduire durablement l’impact de l’anxiété.",
     "Tu n’es pas seul.",
@@ -24,7 +24,7 @@ export default function MonLivre() {
       {/* Hero / Introduction */}
       <div className="text-center mb-16">
         <h1 className="text-5xl md:text-6xl font-bold mb-6">
-          Ton e-Book est disponible !
+          Mes travaux psychoéducatifs
         </h1>
       </div>
 

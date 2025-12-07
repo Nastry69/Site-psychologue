@@ -13,8 +13,8 @@ const Index = () => {
       <BarInfo/>
       <Header />
       <main>
-        <MonLivre/>
         <HeroSection />
+        <MonLivre/>
         <AboutSection />
         <AppointmentSection />
         <ContactSection />
