@@ -30,13 +30,9 @@ export default function MonLivre() {
         {/* Hero */}
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-[2.90rem] font-bold leading-tight text-slate-900">
-              Tu comprends ton anxiete...
-              <br />
-              mais tu continues a la subir ?
-            </h1>
+            <h1 className="text-4xl md:text-[2.90rem] font-bold leading-tight text-slate-900">5 séances d'auto-thérapie pour se libérer de l'anxiété</h1>
             <p className="text-lg text-slate-700 max-w-2xl">
-              Si tu te reconnais, ce parcours a été conçu pour toi.
+              Ce parcours est conçu pour toi.
             </p>
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-5">
