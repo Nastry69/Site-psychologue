@@ -8,10 +8,20 @@ const Header = () => {
   const location = useLocation();
   const [open, setOpen] = useState(false);
 
- const scrollToSection = (sectionId: string) => {
-  if (location.pathname !== '/') {
-    navigate('/');
-    setTimeout(() => {
+  const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        const headerHeight = document.querySelector('header')?.clientHeight || 0;
+        const barInfoHeight = document.querySelector('#bar-info')?.clientHeight || 0;
+        const offset = headerHeight + barInfoHeight;
+        if (element) {
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({ top: elementPosition - offset, behavior: 'smooth' });
+        }
+      }, 100); // petit délai pour le rendu du DOM
+    } else {
       const element = document.getElementById(sectionId);
       const headerHeight = document.querySelector('header')?.clientHeight || 0;
       const barInfoHeight = document.querySelector('#bar-info')?.clientHeight || 0;
@@ -20,38 +30,37 @@ const Header = () => {
         const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({ top: elementPosition - offset, behavior: 'smooth' });
       }
-    }, 100); // petit délai pour le rendu du DOM
-  } else {
-    const element = document.getElementById(sectionId);
-    const headerHeight = document.querySelector('header')?.clientHeight || 0;
-    const barInfoHeight = document.querySelector('#bar-info')?.clientHeight || 0;
-    const offset = headerHeight + barInfoHeight;
-    if (element) {
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-      window.scrollTo({ top: elementPosition - offset, behavior: 'smooth' });
     }
-  }
 
-  setOpen(false); 
+    setOpen(false);
   };
 
- const handlePricingClick = () => {
-  navigate('/tarifs');  
-  setOpen(false);    
+  const handlePricingClick = () => {
+    navigate('/tarifs');
+    setOpen(false);
 
-  setTimeout(() => {
-    window.scrollTo({ top: 0});
-  }, 50);
-};
+    setTimeout(() => {
+      window.scrollTo({ top: 0 });
+    }, 50);
+  };
 
- const handleShopClick = () => {
-  navigate('/Livre');  
-  setOpen(false);    
+  const handleShopClick = () => {
+    navigate('/Livre');
+    setOpen(false);
 
-  setTimeout(() => {
-    window.scrollTo({ top: 0});
-  }, 50);
-};
+    setTimeout(() => {
+      window.scrollTo({ top: 0 });
+    }, 50);
+  };
+
+  const handleProgramme = () => {
+    navigate('/Programmes');
+    setOpen(false);
+
+    setTimeout(() => {
+      window.scrollTo({ top: 0 });
+    }, 50);
+  };
 
   return (
     <header className="fixed top-[30px] md:top-[40px] left-0 w-full z-40 bg-background/90 backdrop-blur-md border-b border-border">
@@ -60,7 +69,7 @@ const Header = () => {
         <div>
           <a href="/" className="text-3xl font-bold text-foreground">Johara BOUDJENANE </a>
           <br />
-        {  <a href="/" className="text-3xl font-bold text-foreground">Psychologue</a>}
+          {<a href="/" className="text-3xl font-bold text-foreground">Psychologue</a>}
         </div>
 
         {/* Menu Desktop */}
@@ -68,11 +77,12 @@ const Header = () => {
           <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors">À propos</button>
           <button onClick={handlePricingClick} className="text-foreground hover:text-primary transition-colors">Tarifs</button>
           <button onClick={handleShopClick} className="text-foreground hover:text-primary transition-colors">Ebook Anxiété</button>
+          <button onClick={handleProgramme} className="text-foreground hover:text-primary transition-colors">Programmes</button>
           <button onClick={() => scrollToSection('appointment')} className="text-foreground hover:text-primary transition-colors">Prendre RDV</button>
           <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">Contact</button>
         </div>
 
-           {/* Bouton Doctolib Desktop */}
+        {/* Bouton Doctolib Desktop */}
         <div className="hidden md:block">
           <Button variant="default" size="sm" onClick={() => window.open("https://www.doctolib.fr/psychologue/venissieux/johara-boudjenane", '_blank')}>
             Mon Doctolib
@@ -92,9 +102,11 @@ const Header = () => {
         <nav className="md:hidden bg-background/95 backdrop-blur-md w-full absolute top-full left-0 flex flex-col items-center space-y-4 py-4 border-t border-border">
           <button onClick={() => { scrollToSection('about'); setOpen(false); }} className="text-foreground hover:text-primary transition-colors">À propos</button>
           <button onClick={() => { handlePricingClick(); setOpen(false); }} className="text-foreground hover:text-primary transition-colors">Tarifs</button>
+          <button onClick={handleShopClick} className="text-foreground hover:text-primary transition-colors">Ebook Anxiété</button>
+          <button onClick={handleProgramme} className="text-foreground hover:text-primary transition-colors">Formation</button>
           <button onClick={() => { scrollToSection('appointment'); setOpen(false); }} className="text-foreground hover:text-primary transition-colors">Prendre RDV</button>
           <button onClick={() => { scrollToSection('contact'); setOpen(false); }} className="text-foreground hover:text-primary transition-colors">Contact</button>
-          
+
           {/* Bouton Doctolib Mobile */}
           <Button variant="default" size="sm" onClick={() => { window.open("https://www.doctolib.fr/psychologue/venissieux/johara-boudjenane", '_blank'); setOpen(false); }}>
             Mon Doctolib

@@ -8,6 +8,7 @@ import AppointmentSection from "@/components/AppointmentSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import MonLivre from "@/components/MonLivre";
+import Formation from "../ProgrammeSection";
 
 const Index = () => {
   return (
@@ -35,6 +36,7 @@ const Index = () => {
       <main>
         <HeroSection />
         {/*<MonLivre />*/}
+        {/*<Formation />*/}
         <AboutSection />
         <AppointmentSection />
         <ContactSection />
