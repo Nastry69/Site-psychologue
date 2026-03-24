@@ -105,7 +105,7 @@ const AboutSection = () => {
 
               <div className="flex items-baseline gap-4">
                 <h4 className="font-semibold text-foreground">2025</h4>
-                <p>EMDR - IFEMDR</p>
+                <p>EMDR - Intégration progressive dans la pratique clinique dans le cadre de la formation niveau 1</p>
               </div>
 
               <div className="flex items-baseline gap-4">
@@ -140,7 +140,7 @@ const AboutSection = () => {
 
               <div className="flex items-baseline gap-4">
                 <h4 className="font-semibold text-foreground">2023</h4>
-                <p>Formation Addictologie - Lyon 1</p>
+                <p>Formation Addictologie - AFPRO</p>
               </div>
 
               <div className="flex items-baseline gap-4">
