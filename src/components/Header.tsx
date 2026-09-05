@@ -76,8 +76,8 @@ const Header = () => {
         <div className="hidden md:flex flex-1 justify-center items-center space-x-8">
           <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors">À propos</button>
           <button onClick={handlePricingClick} className="text-foreground hover:text-primary transition-colors">Tarifs</button>
-          <button onClick={handleShopClick} className="text-foreground hover:text-primary transition-colors">Ebook Anxiété</button>
-          <button onClick={handleProgramme} className="text-foreground hover:text-primary transition-colors">Programmes</button>
+         {/* <button onClick={handleShopClick} className="text-foreground hover:text-primary transition-colors">Ebook Anxiété</button> */}
+         {/* <button onClick={handleProgramme} className="text-foreground hover:text-primary transition-colors">Programmes</button> */}
           <button onClick={() => scrollToSection('appointment')} className="text-foreground hover:text-primary transition-colors">Prendre RDV</button>
           <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">Contact</button>
         </div>
